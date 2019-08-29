@@ -1,3 +1,10 @@
+<p align="center">
+<a href="https://travis-ci.com/roelofjan-elsinga/url-language-extractor"><img src="https://travis-ci.com/roelofjan-elsinga/url-language-extractor.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/roelofjan-elsinga/url-language-extractor"><img src="https://poser.pugx.org/roelofjan-elsinga/url-language-extractor/downloads" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/roelofjan-elsinga/url-language-extractor"><img src="https://poser.pugx.org/roelofjan-elsinga/url-language-extractor/v/stable" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/roelofjan-elsinga/url-language-extractor"><img src="https://poser.pugx.org/roelofjan-elsinga/url-language-extractor/license" alt="License"></a>
+</p>
+
 # URL Language extractor
 
 This package helps you to resolve the language in a URL.
@@ -10,6 +17,18 @@ You can require the package through Composer.
 
 ```bash
 composer require roelofjan-elsinga/url-language-extractor
+```
+
+# Usage
+
+You can extract the language from the URL by using the following code:
+
+```php
+$short_code = LanguageExtractor::forUrl('/page/en/content-page')
+    ->setAcceptedShortCodes(['en', 'nl', 'es', 'fr'])
+    ->extract();
+
+print $short_code; // 'en'
 ```
 
 ## Contributing
