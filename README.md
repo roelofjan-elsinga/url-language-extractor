@@ -3,7 +3,7 @@
 This package helps you to resolve the language in a URL.
 
 ## Requirements
-- php >= 7.1
+- php >= 7.2
 
 ## Installation
 You can require the package through Composer.
