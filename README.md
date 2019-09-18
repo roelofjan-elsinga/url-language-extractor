@@ -1,11 +1,10 @@
-<p align="center">
+# URL Language extractor
+
 <a href="https://travis-ci.com/roelofjan-elsinga/url-language-extractor"><img src="https://travis-ci.com/roelofjan-elsinga/url-language-extractor.svg" alt="Build Status"></a>
+<img src="https://github.styleci.io/repos/205117674/shield" alt="StyleCI Status">
 <a href="https://packagist.org/packages/roelofjan-elsinga/url-language-extractor"><img src="https://poser.pugx.org/roelofjan-elsinga/url-language-extractor/downloads" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/roelofjan-elsinga/url-language-extractor"><img src="https://poser.pugx.org/roelofjan-elsinga/url-language-extractor/v/stable" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/roelofjan-elsinga/url-language-extractor"><img src="https://poser.pugx.org/roelofjan-elsinga/url-language-extractor/license" alt="License"></a>
-</p>
-
-# URL Language extractor
 
 This package helps you to resolve the language in a URL.
 
