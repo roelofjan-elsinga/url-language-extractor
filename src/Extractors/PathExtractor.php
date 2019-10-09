@@ -19,7 +19,7 @@ class PathExtractor implements ExtractorInterface
      * @param string $url
      * @param array $accepted_short_codes
      */
-    public function __construct(string $url, array $accepted_short_codes = null)
+    public function __construct(string $url, array $accepted_short_codes = [])
     {
         $this->url = $url;
         $this->accepted_short_codes = $accepted_short_codes;
@@ -36,6 +36,16 @@ class PathExtractor implements ExtractorInterface
         $this->accepted_short_codes = $accepted_short_codes;
 
         return $this;
+    }
+
+    /**
+     * Get the accepted language short codes this extractor should match against
+     *
+     * @return array
+     */
+    public function getAcceptedShortCodes(): array
+    {
+        return $this->accepted_short_codes;
     }
 
     /**

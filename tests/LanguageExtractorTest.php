@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class LanguageExtractorTest extends TestCase
 {
-    public function testExceptionIsThrownWhenNoShortcodesProvided()
+    public function test_exception_is_thrown_when_no_shortcodes_provided()
     {
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage("You need to supply accepted language short codes.");
@@ -16,7 +16,7 @@ class LanguageExtractorTest extends TestCase
         LanguageExtractor::forUrl('/en/page/url')->extract();
     }
 
-    public function testLanguageIsFoundInUrlPath()
+    public function test_language_is_found_in_url_path()
     {
         $short_code = LanguageExtractor::forUrl('/en/page/url')
             ->setAcceptedShortCodes(['en'])
@@ -25,7 +25,7 @@ class LanguageExtractorTest extends TestCase
         $this->assertSame('en', $short_code);
     }
 
-    public function testLanguageIsNotFoundIfNotSuppliedAsAcceptable()
+    public function test_language_is_not_found_if_not_supplied_as_acceptable()
     {
         $short_code = LanguageExtractor::forUrl('/en/page/url')
             ->setAcceptedShortCodes(['nl'])
@@ -34,7 +34,7 @@ class LanguageExtractorTest extends TestCase
         $this->assertNull($short_code);
     }
 
-    public function testLanguageIsFoundWhenShortCodeNotAtBeginning()
+    public function test_language_is_found_when_short_code_not_at_beginning()
     {
         $short_code = LanguageExtractor::forUrl('/page/en/content-page')
             ->setAcceptedShortCodes(['en'])
