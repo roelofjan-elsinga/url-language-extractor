@@ -10,7 +10,7 @@
 This package helps you to resolve the language in a URL.
 
 ## Requirements
-- php ^7.2 || >=8.0
+- php ^7.4 || >=8.0
 
 ## Installation
 You can require the package through Composer.
