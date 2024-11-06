@@ -5,7 +5,6 @@ namespace LanguageExtractor\Extractors;
 
 interface ExtractorInterface
 {
-
     /**
      * Set the accepted language shortcodes this extractor should match against
      *
